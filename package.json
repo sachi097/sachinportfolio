@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "sachinPortfolio",
-  "homepage": "https://sachi097.github.io",
+  "homepage": "https://sachi097.github.io/sachinportfolio/index.html",
   "version": "0.1.0",
   "scripts": {
     "build": "react-scripts build",

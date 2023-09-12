@@ -24,7 +24,7 @@ export default function Greeting(props) {
               )}
               <p
                 className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText, fontSize: "1.6rem"}}
+                style={{ color: theme.secondaryText, fontSize: "1.2rem"}}
               >
                 {greeting.subTitle}
               </p>
