@@ -71,6 +71,7 @@ export class HeaderComponent implements OnInit {
       let url = window.location.href;
       // Open a new window with the CV
       window.open(url + "/../assets/cv/" + this.cvName, "_blank");
+      this.analyticsService.sendAnalyticEvent("click_resume", "resume", "click")
   }
 
   public setNextTheme(themeType: number): void {

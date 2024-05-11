@@ -17,7 +17,7 @@
                                     <i id="ghLink" class="ml-4 far fa-folder-open"></i>
                                 </div>
                                 <div class="col-6 d-flex p-0 justify-content-end top-icons">
-                                    <a (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_github", "projects", "click")' style='color: inherit' [href]="project['ghLink']" target="_blank"><i id="ghLink" class="ml-4 fab fa-github"></i></a>
+                                    <a (click)='analyticsService.sendAnalyticEvent("click_project_list_github", "projects", "click")' style='color: inherit' [href]="project['ghLink']" target="_blank"><i id="ghLink" class="ml-4 fab fa-github"></i></a>
                                 </div>
                                 <h5 class="other-project-title mt-4">{{project.Title}}</h5>
                                 <p class="other-project-description" [innerHTML]="project.Description"></p>
