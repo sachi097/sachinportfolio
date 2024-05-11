@@ -19,7 +19,6 @@ export class EducationComponent implements OnInit {
   ngOnInit(): void {
     this.fetchData().subscribe(data => {
       this.constants = data["Education"];
-      console.log(this.constants)
     });
   }
   
