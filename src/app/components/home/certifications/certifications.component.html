@@ -1,0 +1,30 @@
+<section class="section certifications" id="certifications">
+    <div class="container">
+        <div class="section-box">
+            <div class="">
+                <h3 class="section-title">
+                    <span class='n-section-title'>06.</span> {{constants["Title"]}}
+                </h3>
+            </div>
+            <div class="mt-5">
+                <div class="row p-0">
+                    <div *ngFor='let certificate of constants["Certificates"]; let i = index' (click)="redirect(certificate['Url'], $event)"
+                     class="col-12 col-md-6 col-lg-6 col-xl-4 certificate-col" data-aos="fade-up" data-aos-duration="1000">
+                     <div class="certificate-box" style="width: 18rem;">
+                        <img style="height: 130px;" src={{certificate.Logo}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{certificate.Title}}</h5>
+                            <div  class="mt-4">
+                                <a target="_black" class="main-btn">
+                                    {{constants['Btn']}}
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

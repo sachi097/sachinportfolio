@@ -1,0 +1,41 @@
+<section class="section experience" id='experience'>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; flex-direction: row;">
+        <div class="section-box">
+          <div class="about-title" data-aos="fade-up">
+            <h3 class="section-title">
+                <span class='n-section-title'>02.</span> {{constants["Title"]}}
+            </h3>
+        </div>
+          <div class="experience-tabs" data-aos="fade-up" data-aos-duration="1000">
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" orientation="vertical" class="nav-tabs experience-tabs">
+                  <li *ngFor='let experience of constants["Experiences"]; let i = index' [title]="experience.Tab" [ngbNavItem]="i">
+                    <a ngbNavLink>
+                      <img style="width: 20px; height: 20px; margin-right: 10px;" src= {{experience.Logo}} alt="">
+                      {{experience.Tab}}
+                    </a>
+                      <ng-template ngbNavContent>
+                        <div class="experience-description-box">
+                          <div style="display: flex;">
+                            <img style="width: 20px; height: 20px; margin-right: 10px;" src= {{experience.Logo}} alt="">
+                            <div>
+                              <h4 class='title-tab-content'>{{experience.Title}} | <span class="company-tab-content" (click)="openCompanyUrl(experience.Url)">{{experience.Tab}}</span></h4>
+                              <h5 class="experience-time">{{experience.Date}}</h5>
+                            </div>
+                          </div>
+                          <p *ngFor='let experienceDescriptionParagraph of experience.Description; let i = index' class="experience-description"
+                          [innerHTML]="experienceDescriptionParagraph"></p>
+                        <span></span>
+                        </div>          
+                      </ng-template>
+                  </li>
+            </ul>
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+          </div>
+        </div>
+        <div class="animation">
+          <app-human-animation [animationName] = "'working'" [size] = '3' [position]="[-2,-2.5,0]"></app-human-animation>
+        </div>
+      </div>
+    </div>
+</section>

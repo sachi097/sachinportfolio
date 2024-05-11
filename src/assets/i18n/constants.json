@@ -1,0 +1,234 @@
+{
+    "Header": {
+        "Item1": "About me",
+        "Item2": "Experience",
+        "Item3": "Featured Projects",
+        "Item4": "Projects",
+        "Item5": "Education",
+        "Item6": "Certifications",
+        "Item7": "Contact",
+        "cvBtn": "Resume",
+        "cvName": "Sachin_Rathod_Resume.pdf"
+    },
+    "Banner": {
+        "Pretitle": "Hello! My name is",
+        "Description": "I'm a <span class='underline'>software engineer</span> currently pursuing master's degree in computer science. Passionate about <span class='underline'>full-stack development</span>, <span class='underline'>cloud computing</span> and <span class='underline'>distributed systems</span>. I find joy in architecting large-scale systems and building comprehensive solutions that seamlessly harness the power of cloud services.",
+        "ActionBtn": "Get in touch"
+    },
+    "About": {
+        "Title": "About me",
+        "Paragraphs": [
+            "Over the course of my <span class='underline'>3.8-year professional career</span>, I have held positions ranging from developer to team leader. Practicing agile methodologies to meet industry standards, being self-motivated, detail-oriented, a team player, and having the ability to work out solutions by going beyond the boundaries. Finally, I am an avid programmer and entrepreneur, passionate about building products and utilities that affect millions of people, and I love to put computers to work.",
+            "Some of the technologies that I have trained and worked on include (but are not limited to):"
+        ]
+    },
+    "Experience": {
+        "Title": "Experience",
+        "Experiences": [
+            {
+                "Tab": "iSAT",
+                "Title": "Software Engineer",
+                "Logo": "./../../../../assets/images/experience/isat.png",
+                "Url": "https://www.colorado.edu/research/ai-institute/",
+                "Date": "September 2023 - Present",
+                "Description": [
+                    "Built mechanism to track user actions on Microsoft makecode editor, store it to <span class='underline'>DynamoDB</span> and provide it to <span class='underline'>machine learning</span> pipeline to analyse collaboration among users. Deployed service on <span class='underline'>AWS ECS</span>.",
+                    "Developed <span class='underline'>AWS lambda</span> that gets triggered on DynamoDB write, and generates AMR graph from the utterances of the user.",
+                    "Responsible for architecting and developing various machine learning pipelines and services over <span class='underline'>AWS cloud</span>."
+                ]
+            },
+            {
+                "Tab": "Optum",
+                "Title": "Senior Software Engineer",
+                "Logo": "./../../../../assets/images/experience/optum.png",
+                "Url": "https://www.optum.in/",
+                "Date": "November 2022 - March 2023",
+                "Description": [
+                    "Developed a <span class='underline'>Jenkins DevOps</span> pipeline for automatic code build and deployment on AEM. Reduced manual work by up to 80%.",
+                    "Responsible for creating module that syncs local git with <span class='underline'>Adobe Cloud Git</span> and notifies the user on deployment status via email, save 100% monitoring time.",
+                    "Built a python tool that compares two websites employing <span class='underline'>Opencv-Python and Imutils packages</span>. Reduced manual work by up to 90%."
+                ]
+            },
+            {
+                "Tab": "SAP Labs",
+                "Title": "Software Engineer",
+                "Logo": "./../../../../assets/images/experience/sap_logo.svg",
+                "Url": "https://www.sap.com/india/index.html",
+                "Date": "June 2019 - November 2022",
+                "Description": [
+                    "Developed cloud-native applications for procurement sector. This required a thorough knowledge of domain driven design and cloud architecture design principles. 100% of on-premise applications were <span class='underline'>migrated to cloud</span>.",
+                    "Responsible for user interface, <span class='underline'>database modelling</span>, implementing <span class='underline'>Kafka</span> based inter-service asynchronous messaging architecture and developing authorization and security using Spring Security framework.",
+                    "Integrated <span class='underline'>ESRI ArcGIS map</span> service to SAP UI5 version of MRS app using APIs. Increased user experience by 50% in visualizing the current position of the service provider, source to destination routes and travel details (considering live traffic)."
+                ]
+            }
+        ]
+    },
+    "FeatureProjects": {
+        "Title": "Featured Projects",
+        "Label": "Featured Project",
+        "Projects": [
+            {
+                "Title": "ZwellStar",
+                "Description": "ZwellStar is an all-in-one app that provides ample opportunity to browse through the latest and most trending clothes, footwear, fashion, electronics, etc. It allows users to order delicious food from local restaurants, book dining tables, and send packages anywhere across the city.",
+                "imgs": [
+                    "assets/images/zwellstar/home.webp",
+                    "assets/images/zwellstar/product.webp",
+                    "assets/images/zwellstar/restaurant.webp",
+                    "assets/images/zwellstar/instadrop.webp"
+                ],
+                "Url": "https://play.google.com/store/apps/details?id=com.equinox.zwellstar",
+                "Logo": "ml-4 fab fa-google-play",
+                "Technologies": [
+                    "Ionic",
+                    "Angular",
+                    "Firebase",
+                    "Google App Engine",
+                    "Google Kubernetes Engine",
+                    "Google Cloud Funtions",
+                    "Docker"
+                ]
+            },
+            {
+                "Title": "Hey-ESRI",
+                "Description": "A mobile app designed to showcase various services provided by ESRI. And to incorporate NLP to support services over voice command. </br> Available voice commands: <ul><li>Search location: Example - Search Boulder, Search Denver, etc.</li><li>Directions: Example - Give Me Directions From Boulder To Denver, Find Directions From Boulder To Denver.</li><li>Find nearby places: Example - Find nearby food, Find nearby gas station.</li></ul>",
+                "imgs": [
+                    "assets/images/esri/explore_tab.png",
+                    "assets/images/esri/hey_esri_tab.png",
+                    "assets/images/esri/directions.png",
+                    "assets/images/esri/near_by_food.png"
+                ],
+                "Url": "https://github.com/sachi097/hey-esri",
+                "Logo": "ml-4 fab fa-github",
+                "Technologies": [
+                    "Ionic",
+                    "Angular",
+                    "ESRI ArcGIS Map JS-SDK",
+                    "NLP"
+                ]
+            }
+        ]
+    },
+    "OtherProjects": {
+        "Title": "Projects",
+        "Projects": [
+            {
+                "Title": "Distributed Video Analyzer",
+                "Description": "Developed a distributed system using the master-worker architecture, in which the master node splits video into smaller chunks and distributes them to worker nodes. Each worker node works on assigned chunks for object detection. Employed Google Compute Engine to proficiently deploy and manage master and worker nodes.",
+                "ghLink": "https://github.com/sachi097/distributed-video-analyzer",
+                "Technologies": [
+                    "React",
+                    "Python",
+                    "Flask",
+                    "ZeroMQ",
+                    "GCP"
+                ]
+            },
+            {
+                "Title": "Caption Generation for Images",
+                "Description": "Examine how well beam search and greedy search (argmax) techniques perform in terms of producing captions. Used natural language processing (NLP) techniques, such as next word prediction, stop word removal, and tokenization. Using InceptionV3 for image-feature extraction, the model is based on the encoder-decoder framework.",
+                "ghLink": "https://github.com/sachi097/image_captioning",
+                "Technologies": [
+                    "NLP",
+                    "CNN",
+                    "RNN",
+                    "Tensorflow",
+                    "Keras"
+                ]
+            },
+            {
+                "Title": "Music Separation System",
+                "Description": "Created a Kubernetes cluster that provides a REST API for automatic music separation service and prepares the different tracks for retrieval. Used Redis as a message broker and MinIO for audio file storage. Deployed services on Google Kubernetes Engine.",
+                "ghLink": "https://github.com/sachi097/music-separation-system",
+                "Technologies": [
+                    "REST",
+                    "Flask",
+                    "Redis",
+                    "MinIO",
+                    "GKE"
+                ]
+            },
+            {
+                "Title": "Android Malware Detection System",
+                "Description": "System that detects whether an Android application is malicious or not. The Androguard Python tool is used to extract bit patterns for Android permissions. The system used a Naive Bayes classifier and probabilistic data structure (Bloom filters) to classify a test application.",
+                "ghLink": "https://github.com/sachi097/android-malware-detection-system",
+                "Technologies": [
+                    "Python",
+                    "ML",
+                    "Reverse Engineering"
+                ]
+            }
+        ]
+    },
+    "Education": {
+        "Title": "Education",
+        "Educations": [
+            {
+                "Tab": "Cu Boulder",
+                "Title": "University of Colorado Boulder, USA",
+                "Degree": "Master of Science in Computer Science",
+                "Logo": "./../../../../assets/images/education/cub_logo.png",
+                "Url": "https://www.colorado.edu/",
+                "DateAndGPA": "August 2023 - May 2025 - 4.00 CGPA",
+                "Courses": [
+                    ["Data Center Scale Computing", "Big Data Architecture", "Distributed Systems"],
+                    ["Natural Language Processing", "Computer Vision", "Data Mining"]
+                ]
+            },
+            {
+                "Tab": "NITK",
+                "Title": "National Institute of Technology Karnataka, Surathkal, India",
+                "Degree": "B.Tech. in Information Technology",
+                "Logo": "./../../../../assets/images/education/nitk_logo.png",
+                "Url": "http://nitk.ac.in/",
+                "DateAndGPA": "August 2015 - May 2019 - 8.45 CGPA",
+                "Courses": [
+                    ["Data Structures and Algorithms", "Operating Systems", "Computer Networks"],
+                    ["Design and Analysis of Algorithms", "Database Systems", "Machine Learning"]
+                ]
+            }
+        ]
+    },
+    "Certifications": {
+        "Title": "Certifications",
+        "Btn": "Show credential",
+        "Certificates": [
+            {
+                "Title": "AWS Cloud Practitioner Essentials",
+                "Url": "https://coursera.org/share/bdf199cd320c79a9620c9ac0342ae584",
+                "Logo": "./../../../../assets/images/certifications/aws_logo.png"
+            },
+            {
+                "Title": "Learning Java",
+                "Url": "https://www.linkedin.com/learning/certificates/3963674f897d6697f96ee55589c95c93747f0c624a0244ad06dbf96dddb21c15?trk=backfilled_certificate",
+                "Logo": "./../../../../assets/images/certifications/linkedin_logo.png"
+            },
+            {
+                "Title": "Learning Spring with Spring Boot",
+                "Url": "https://www.linkedin.com/learning/certificates/21603bec78c0cf7874bae3d7aa3c95735da98e4f422e663586731658613fd3c7?trk=backfilled_certificate",
+                "Logo": "./../../../../assets/images/certifications/linkedin_logo.png"
+            },
+            {
+                "Title": "Learning Node.js",
+                "Url": "https://www.linkedin.com/learning/certificates/5a095dc19f9afdafba2f0b04e2850492c34a40525f041e24eb9849864497ba64?trk=backfilled_certificate",
+                "Logo": "./../../../../assets/images/certifications/linkedin_logo.png"
+            },
+            {
+                "Title": "Node.js: Microservices",
+                "Url": "https://www.linkedin.com/learning/certificates/599e6624605df2ebfeb649511ed8c3d97dd01045dc0a0f09832a8727719e433d?trk=backfilled_certificate",
+                "Logo": "./../../../../assets/images/certifications/linkedin_logo.png"
+            },
+            {
+                "Title": "Responsible Conduct of Research for Engineers",
+                "Url": "https://www.citiprogram.org/verify/?w2bc1d078-d9e6-4e81-9e59-63e06bcd8ee9-59858115",
+                "Logo": "./../../../../assets/images/certifications/citiprogram_logo.svg"
+            }
+            
+        ]
+    },
+    "Contact": {
+        "Pretitle": "What’s Next",
+        "Title": "Get in touch!",
+        "Content": "Feel free to reach out by clicking the button below to send me a message. Whether you have inquiries, job opportunities, or just want to say hello, I'm always eager to hear from you. Let's start a conversation!",
+        "Btn": "Say Hello"
+    }
+}

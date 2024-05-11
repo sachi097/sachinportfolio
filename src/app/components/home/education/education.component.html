@@ -1,0 +1,51 @@
+<section class="section education" id='education'>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; flex-direction: row;">
+        <div class="section-box">
+          <div class="course-title" data-aos="fade-up">
+            <h3 class="section-title">
+                <span class='n-section-title'>05.</span> {{constants["Title"]}}
+            </h3>
+        </div>
+          <div class="education-tabs" data-aos="fade-up" data-aos-duration="1000">
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" orientation="vertical" class="nav-tabs education-tabs">
+                  <li class="li-side-tab" *ngFor='let education of constants["Educations"]; let i = index' [title]="education.Tab" [ngbNavItem]="i">
+                    <a ngbNavLink>
+                      <img style="width: 20px; height: 20px; margin-right: 10px;" src= {{education.Logo}} alt="">
+                      {{education.Tab}}
+                    </a>
+                      <ng-template ngbNavContent>
+                        <div class="education-description-box">
+                          <div style="display: flex;">
+                            <img style="width: 20px; height: 20px; margin-right: 10px;" src= {{education.Logo}} alt="">
+                            <div>
+                              <h4 class='title-tab-content' (click)="openUniversityUrl(education.Url)">{{education.Title}}</h4>
+                              <h5 class="university-tab-content">{{education.Degree}}</h5>
+                              <h5 class="education-time">{{education.DateAndGPA}}</h5>
+                              <div>
+                                <h5 class="university-tab-content">Course Work</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div style="display: flex; margin-left: 10px;" class="row">
+                                <div class="col-12 col-md-6 mb-4 mb-md-0" *ngFor='let courses of education["Courses"]; let j = index'>
+                                    <div class="course-description">
+                                        <ul class="skills-list" data-aos="fade-up">
+                                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000" *ngFor='let course of courses; let k = index'><span class="underline">{{course}}</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>          
+                      </ng-template>
+                  </li>
+            </ul>
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+          </div>
+        </div>
+        <div class="animation">
+          <app-human-animation [animationName] = "'working'" [size] = '3' [position]="[-2,-2.5,0]"></app-human-animation>
+        </div>
+      </div>
+    </div>
+</section>

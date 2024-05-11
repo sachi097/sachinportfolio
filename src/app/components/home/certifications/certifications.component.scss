@@ -1,0 +1,61 @@
+@import "./../../../../variables.scss";
+
+.certifications{
+    .certificate-col{
+        padding: 10px;
+        height: 350px;
+
+        .certificate-box {
+            box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+            -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+            transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: flex-start;
+            -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+            position: relative;
+            padding: 2rem 1.75rem;
+            height: 100%;
+            border-radius: 3px;
+            -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+            transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+            background-color: var(--second-background-color);
+            cursor: pointer;
+
+            &:hover {
+                -webkit-transform: translateY(-5px);
+                -ms-transform: translateY(-5px);
+                transform: translateY(-5px);
+            }
+            &:hover, &:focus {
+                box-shadow: 0 20px 30px -15px rgba(2,12,27,0.7);
+            }
+        }
+
+
+    }    
+}
+
+
+@media(max-width: 1300px){
+    .certificates{
+        .certificate-col{
+            height: auto;
+        }
+    }
+}

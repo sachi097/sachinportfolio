@@ -1,0 +1,126 @@
+<nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]='this.pageYPosition>0'>
+    <div class="container">
+        <a class="navbar-brand text-light" [routerLink]="'inicio'">
+            <!-- <img src='assets/images/logo.png' width='25' /> -->
+        </a>
+        <ul ngbNav #nav="ngbNav" class="menu-ul">
+            <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_about", "menu", "click")'>
+                <a ngbNavLink (click)='scroll("about")'><span class='nav-number'>01. </span> <span class="underline nav-text"> {{constants["Item1"]}}</span></a>
+            </li>
+            <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_experience", "menu", "click")'>
+                <a ngbNavLink (click)='scroll("experience")'><span class='nav-number'>02. </span> <span class="underline nav-text"> {{constants["Item2"]}}</span></a>
+            </li>
+            <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_experience", "menu", "click")'>
+                <a ngbNavLink (click)='scroll("projects")'><span class='nav-number'>03. </span> <span class="underline nav-text"> {{constants["Item3"]}}</span></a>
+            </li>
+            <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
+                <a ngbNavLink (click)='scroll("more-projects")'><span class='nav-number'>04. </span> <span class="underline nav-text"> {{constants["Item4"]}}</span></a>
+            </li>
+            <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
+                <a ngbNavLink (click)='scroll("education")'><span class='nav-number'>05. </span> <span class="underline nav-text"> {{constants["Item5"]}}</span></a>
+            </li>
+            <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
+                <a ngbNavLink (click)='scroll("certifications")'><span class='nav-number'>06. </span> <span class="underline nav-text"> {{constants["Item6"]}}</span></a>
+            </li>
+            <!-- <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
+                <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>07. </span> <span class="underline nav-text"> {{constants["Item7"]}}</span></a>
+            </li> -->
+            <li ngbNavItem>
+                <a (click)="downloadCV()" class="main-btn cv-btn nav-text" ngbNavLink>
+                  {{constants["cvBtn"]}}
+                </a>
+            </li>
+            <li>
+                <div class="themes">
+                    <div (click)="setNextTheme(0)" class="language-container" [class.active] = 'themeType==0'>
+                        <div class="language-box" style="background-color: #adb5bd; border-color: #0091ad;"></div>                           
+                    </div>
+                    <div (click)="setNextTheme(1)" class="language-container"  [class.active] = 'themeType==1'>
+                        <div class="language-box" style="background-color: #303C55; border-color: #64ffda;"></div>
+                    </div>
+                    <div (click)="setNextTheme(2)"  class="language-container" [class.active] = 'themeType==2'>
+                        <div class="language-box" style="background-color: #52b788; border-color: #10676f;" ></div>                        
+                    </div>
+                </div> 
+                <!-- <div ngbDropdown class="d-inline-block">
+                    <div class="language-container" id="dropdownForm1" ngbDropdownToggle>
+                        <span class="flag-text" style="margin-right: 10px;">Themes</span>
+                        <svg class='arrow-language' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+                    </div>
+                    <div ngbDropdownMenu aria-labelledby="dropdownForm1">
+                        <div (click)="setNextTheme(0)" class="language-container language-container-selector" [class.active] = 'themeType==0'>
+                            <div class="language-box" style="background-color: #dee2e6; border-color: #0091ad;"></div>
+                                <span class="flag-text">Grey</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 arrow-active" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>                            
+                        </div>
+                        <div (click)="setNextTheme(1)" style="margin-top: 1px !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important;" class="language-container language-container-selector active" [class.active] = 'themeType==1'>
+                            <div class="language-box" style="background-color: #0a192f; border-color: #64ffda;"></div>
+                            <span class="flag-text">Navy</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 arrow-active" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                        </div>
+                        <div (click)="setNextTheme(2)" style="margin-top: 1px !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important;" class="language-container language-container-selector active" [class.active] = 'themeType==2'>
+                            <div class="language-box" style="background-color: #95d5b2; border-color: #10676f;"></div>
+                                <span class="flag-text">Green</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 arrow-active" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>                            
+                        </div>
+                    </div>
+                </div> -->
+            </li>
+        </ul>
+        <div class="menu-wrapper">
+            <div [class.animate]='responsiveMenuVisible' (click)='responsiveMenuVisible = !responsiveMenuVisible' class="hamburger-menu"></div>
+        </div>
+        <div class="menu-responsive" [ngStyle]="{'pointer-events': !responsiveMenuVisible ? 'none' : '' }">
+            <aside [class.aside-show]='responsiveMenuVisible' [class.nav-shadow]='this.pageYPosition>0' class="on-top">
+                <nav>
+                    <ol>
+                        <li (click)='analyticsService.sendAnalyticEvent("click_about", "menu", "click")'>
+                            <a (click)='scroll("about")'>
+                                <span>01. </span> {{constants["Item1"]}}
+                            </a>
+                        </li>
+                        <li (click)='analyticsService.sendAnalyticEvent("click_experience", "menu", "click")'>
+                            <a (click)='scroll("experience")'>
+                                <span>02. </span> {{constants["Item2"]}}
+                            </a>
+                        </li>
+                        <li (click)='analyticsService.sendAnalyticEvent("click_experience", "menu", "click")'>
+                          <a (click)='scroll("projects")'>
+                              <span>03. </span> {{constants["Item3"]}}
+                          </a>
+                      </li>
+                      <li (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
+                        <a (click)='scroll("contact")'>
+                            <span>04. </span> {{constants["Item4"]}}
+                        </a>
+                      </li>
+                      <li>
+                          <a (click)="downloadCV()" class="main-btn cv-btn">
+                            {{constants["cvBtn"]}}
+                          </a>
+                      </li>
+                      <li>
+                        <div class="themes">
+                            <div (click)="setNextTheme(0)" class="language-container" [class.active] = 'themeType==0'>
+                                <div class="language-box" style="background-color: #adb5bd; border-color: #0091ad;"></div>                           
+                            </div>
+                            <div (click)="setNextTheme(1)" class="language-container"  [class.active] = 'themeType==1'>
+                                <div class="language-box" style="background-color: #303C55; border-color: #64ffda;"></div>
+                            </div>
+                            <div (click)="setNextTheme(2)"  class="language-container" [class.active] = 'themeType==2'>
+                                <div class="language-box" style="background-color: #52b788; border-color: #10676f;" ></div>                        
+                            </div>
+                        </div> 
+                      </li>
+                    </ol>
+                </nav>
+            </aside>
+        </div>
+    </div>
+</nav>
