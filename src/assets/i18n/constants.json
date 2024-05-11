@@ -12,7 +12,7 @@
     },
     "Banner": {
         "Pretitle": "Hello! My name is",
-        "Description": "I'm a <span class='underline'>software engineer</span> currently pursuing master's degree in computer science. Passionate about <span class='underline'>full-stack development</span>, <span class='underline'>cloud computing</span> and <span class='underline'>distributed systems</span>. I find joy in architecting large-scale systems and building comprehensive solutions that seamlessly harness the power of cloud services.",
+        "Description": "I'm a <span class='underline'>Software Engineer</span> currently pursuing Master's degree in Computer Science. Passionate about <span class='underline'>Full-stack Development</span>, <span class='underline'>Cloud Computing</span> and <span class='underline'>Distributed Systems</span>. I find joy in architecting large-scale systems and building comprehensive solutions that seamlessly harness the power of cloud services.",
         "ActionBtn": "Get in touch"
     },
     "About": {
@@ -42,7 +42,7 @@
                 "Title": "Senior Software Engineer",
                 "Logo": "./../../../../assets/images/experience/optum.png",
                 "Url": "https://www.optum.in/",
-                "Date": "November 2022 - March 2023",
+                "Date": "November 2022 - April 2023",
                 "Description": [
                     "Developed a <span class='underline'>Jenkins DevOps</span> pipeline for automatic code build and deployment on AEM. Reduced manual work by up to 80%.",
                     "Responsible for creating module that syncs local git with <span class='underline'>Adobe Cloud Git</span> and notifies the user on deployment status via email, save 100% monitoring time.",
