@@ -71,10 +71,7 @@
                 "Title": "ZwellStar",
                 "Description": "ZwellStar is an all-in-one app that provides ample opportunity to browse through the latest and most trending clothes, footwear, fashion, electronics, etc. It allows users to order delicious food from local restaurants, book dining tables, and send packages anywhere across the city.",
                 "imgs": [
-                    "assets/images/zwellstar/home.webp",
-                    "assets/images/zwellstar/product.webp",
-                    "assets/images/zwellstar/restaurant.webp",
-                    "assets/images/zwellstar/instadrop.webp"
+                    "assets/images/zwellstar/zwellstar.png"
                 ],
                 "Url": "https://play.google.com/store/apps/details?id=com.equinox.zwellstar",
                 "Logo": "ml-4 fab fa-google-play",
@@ -90,12 +87,9 @@
             },
             {
                 "Title": "Hey-ESRI",
-                "Description": "A mobile app designed to showcase various services provided by ESRI. And to incorporate NLP to support services over voice command. </br> Available voice commands: <ul><li>Search location: Example - Search Boulder, Search Denver, etc.</li><li>Directions: Example - Give Me Directions From Boulder To Denver, Find Directions From Boulder To Denver.</li><li>Find nearby places: Example - Find nearby food, Find nearby gas station.</li></ul>",
+                "Description": "A mobile app designed to showcase various services provided by ESRI. App support services over voice command. Available voice commands: <ul><li>Search location: Example - Search Boulder, Search Denver, etc.</li><li>Directions: Example - Give Me Directions From Boulder To Denver, Find Directions From Boulder To Denver.</li><li>Find nearby places: Example - Find nearby food, Find nearby gas station.</li></ul>",
                 "imgs": [
-                    "assets/images/esri/explore_tab.png",
-                    "assets/images/esri/hey_esri_tab.png",
-                    "assets/images/esri/directions.png",
-                    "assets/images/esri/near_by_food.png"
+                    "assets/images/esri/esri.png"
                 ],
                 "Url": "https://github.com/sachi097/hey-esri",
                 "Logo": "ml-4 fab fa-github",
