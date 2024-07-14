@@ -26,6 +26,18 @@
         "Title": "Experience",
         "Experiences": [
             {
+                "Tab": "Esri",
+                "Title": "Software Engineer Intern",
+                "Logo": "./../../../../assets/images/experience/esri_logo.svg",
+                "Url": "https://www.esri.com/en-us/home",
+                "Date": "May 2024 - August 2024",
+                "Description": [
+                    "Built a tool using C# to fuzz test the ArcGIS Enterprise server for performance and correctness.",
+                    "Responsible for architecting the tool using async tasks and the multi-threaded programming paradigm to generate <span class='underline'>10-100 billion requests</span>, which could trigger code execution across various domains of the business logic.",
+                    "Incorporated a python script that leveraged the fast data frame library <span class='underline'>Polars</span> and generated graphs of the execution details using <span class='underline'>Plotly</span> to analyse execution patterns across business logic to draw conclusions on the performance and correctness of the system."
+                ]
+            },
+            {
                 "Tab": "iSAT",
                 "Title": "Software Engineer",
                 "Logo": "./../../../../assets/images/experience/isat.png",
@@ -119,7 +131,7 @@
             },
             {
                 "Title": "Caption Generation for Images",
-                "Description": "Examine how well beam search and greedy search (argmax) techniques perform in terms of producing captions. Used natural language processing (NLP) techniques, such as next word prediction, stop word removal, and tokenization. Using InceptionV3 for image-feature extraction, the model is based on the encoder-decoder framework.",
+                "Description": "Examined how well beam search and greedy search (argmax) techniques perform in terms of producing captions. Used natural language processing (NLP) techniques, such as next word prediction, stop word removal, and tokenization. Using InceptionV3 for image-feature extraction, the model is based on the encoder-decoder framework.",
                 "ghLink": "https://github.com/sachi097/image_captioning",
                 "Technologies": [
                     "NLP",
@@ -162,7 +174,7 @@
                 "Degree": "Master of Science in Computer Science",
                 "Logo": "./../../../../assets/images/education/cub_logo.png",
                 "Url": "https://www.colorado.edu/",
-                "DateAndGPA": "August 2023 - May 2025 - 4.00 CGPA",
+                "DateAndGPA": "August 2023 - May 2025 - 4.00 GPA",
                 "Courses": [
                     ["Data Center Scale Computing", "Big Data Architecture", "Distributed Systems"],
                     ["Natural Language Processing", "Computer Vision", "Data Mining"]
