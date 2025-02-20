@@ -32,7 +32,7 @@
                 "Url": "https://www.esri.com/en-us/home",
                 "Date": "May 2024 - August 2024",
                 "Description": [
-                    "Built a tool using C# to fuzz test the ArcGIS Enterprise server for performance and correctness.",
+                    "Built a tool to fuzz test the ArcGIS Enterprise server for performance and correctness.",
                     "Responsible for architecting the tool using async tasks and the multi-threaded programming paradigm to generate <span class='underline'>10-100 billion requests</span>, which could trigger code execution across various domains of the business logic.",
                     "Incorporated a python script that leveraged the fast data frame library <span class='underline'>Polars</span> and generated graphs of the execution details using <span class='underline'>Plotly</span> to analyse execution patterns across business logic to draw conclusions on the performance and correctness of the system."
                 ]
@@ -117,6 +117,30 @@
     "OtherProjects": {
         "Title": "Projects",
         "Projects": [
+            {
+                "Title": "GenAI Personal Assistant",
+                "Description": "A Spring Boot application utilising LangChain4J to interact with Llama3 through an Ollama Docker container. Assistant is enforced to be memory-aware to track previous conversations and use them to provide context-aware responses. Stored conversations into DynamoDB for future fine-tuning of the model.",
+                "ghLink": "https://github.com/sachi097/springboot-genai-personal-assitant",
+                "Technologies": [
+                    "Java",
+                    "Spring Boot",
+                    "Ollama",
+                    "Llama3",
+                    "LangChain4J"
+                ]
+            },
+            {
+                "Title": "ParkSmart",
+                "Description": "Developed a comprehensive cloud solution for parking problem considering crime rate and live occupancy of the parking slots. Integrated Esri’s services such as ArcGIS online, Survey123, Find Places API with firebase and google cloud functions and deployed the rest server on GCP.",
+                "ghLink": "https://devpost.com/software/parksmart-jio8an",
+                "Technologies": [
+                    "Ionic",
+                    "ArcGIS Maps JS SDK",
+                    "Spring Boot",
+                    "Firebase",
+                    "GCP"
+                ]
+            },
             {
                 "Title": "Distributed Video Analyzer",
                 "Description": "Developed a distributed system using the master-worker architecture, in which the master node splits video into smaller chunks and distributes them to worker nodes. Each worker node works on assigned chunks for object detection. Employed Google Compute Engine to proficiently deploy and manage master and worker nodes.",
